@@ -30,7 +30,7 @@ export function FeaturedSpotlight({
       whileTap={{ scale: 0.99 }}
       transition={{ type: 'spring', stiffness: 260, damping: 22 }}
       className={cn(
-        'group relative w-full overflow-hidden rounded-3xl border border-white/10 bg-card/70 text-left shadow-[var(--shadow-soft)] backdrop-blur-xl outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background',
+        'group relative w-full overflow-hidden rounded-3xl border border-border/70 bg-card/70 text-left shadow-[var(--shadow-soft)] backdrop-blur-xl outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background',
         className,
       )}
     >

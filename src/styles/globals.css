@@ -12,14 +12,58 @@
 
 @font-face {
   font-family: 'Geograph';
+  src: url('/geograph/geographweblight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geograph';
   src: url('/geograph/geographwebbold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Geograph';
+  src: url('/geograph/geographwebblack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
+    --geograph-weight: 400;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 8%;
+    --primary: 210 90% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 18% 96%;
+    --secondary-foreground: 222 47% 10%;
+    --muted: 220 18% 96%;
+    --muted-foreground: 215 16% 40%;
+    --accent: 220 18% 96%;
+    --accent-foreground: 222 47% 10%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 16% 88%;
+    --input: 220 18% 96%;
+    --ring: 210 90% 45%;
+    --radius: 1rem;
+    --shadow-soft: 0 12px 40px hsl(222 47% 8% / 0.10);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.22);
+
+    color-scheme: light;
+  }
+
+  html.dark {
     --background: 222 47% 6%;
     --foreground: 210 40% 96%;
     --card: 222 40% 10%;
@@ -39,9 +83,22 @@
     --border: 240 4% 20%;
     --input: 240 4% 16%;
     --ring: 210 90% 60%;
-    --radius: 1rem;
     --shadow-soft: 0 10px 40px hsl(0 0% 0% / 0.3);
     --shadow-glow: 0 0 40px hsl(var(--primary) / 0.2);
+
+    color-scheme: dark;
+  }
+
+  html.font-weight-light {
+    --geograph-weight: 300;
+  }
+
+  html.font-weight-regular {
+    --geograph-weight: 400;
+  }
+
+  html.font-weight-black {
+    --geograph-weight: 900;
   }
 
   * {
@@ -51,6 +108,7 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: Geograph, ui-sans-serif, system-ui, sans-serif;
+    font-weight: var(--geograph-weight);
     font-feature-settings: 'ss01' on, 'ss02' on, 'cv11' on;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;

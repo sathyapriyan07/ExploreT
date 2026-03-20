@@ -122,7 +122,7 @@ export default function HomePage() {
 
   return (
     <div className="space-y-12">
-      <section className="relative -mx-4 overflow-hidden rounded-3xl border border-white/10 bg-card/70 shadow-[var(--shadow-soft)] backdrop-blur-xl md:-mx-6">
+      <section className="relative -mx-4 overflow-hidden rounded-3xl border border-border/70 bg-card/70 shadow-[var(--shadow-soft)] backdrop-blur-xl md:-mx-6">
         <img
           src={heroImg}
           alt=""

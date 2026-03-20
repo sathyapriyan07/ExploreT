@@ -503,7 +503,7 @@ export default function DetailPage() {
 
   return (
     <div className="space-y-10">
-      <section className="relative -mx-4 overflow-hidden rounded-3xl border border-white/10 bg-card/70 shadow-[var(--shadow-soft)] backdrop-blur-xl md:-mx-6">
+      <section className="relative -mx-4 overflow-hidden rounded-3xl border border-border/70 bg-card/70 shadow-[var(--shadow-soft)] backdrop-blur-xl md:-mx-6">
         {hero ? (
           <img
             src={hero}
@@ -697,7 +697,7 @@ export default function DetailPage() {
                       <Link
                         key={p.title}
                         to={`/place/${encodeURIComponent(p.title)}`}
-                        className="rounded-2xl border border-white/10 bg-background/30 p-3 transition-colors hover:bg-background/40"
+                        className="rounded-2xl border border-border/70 bg-background/30 p-3 transition-colors hover:bg-background/40"
                       >
                         <div className="flex items-center gap-3">
                           {similarThumbsQ.data?.[p.title] ? (
@@ -705,10 +705,10 @@ export default function DetailPage() {
                               src={similarThumbsQ.data[p.title]!}
                               alt=""
                               loading="lazy"
-                              className="h-12 w-12 shrink-0 rounded-xl border border-white/10 object-cover"
+                              className="h-12 w-12 shrink-0 rounded-xl border border-border/70 object-cover"
                             />
                           ) : (
-                            <div className="h-12 w-12 shrink-0 rounded-xl border border-white/10 bg-gradient-to-br from-muted/60 to-background/20" />
+                            <div className="h-12 w-12 shrink-0 rounded-xl border border-border/70 bg-gradient-to-br from-muted/60 to-background/20" />
                           )}
                           <div className="min-w-0">
                             <div className="truncate text-sm font-medium">{p.title}</div>
@@ -825,7 +825,7 @@ export default function DetailPage() {
                       <Link
                         key={p.pageid}
                         to={`/place/${encodeURIComponent(p.title)}`}
-                        className="rounded-2xl border border-white/10 bg-background/30 p-3 transition-colors hover:bg-background/40"
+                        className="rounded-2xl border border-border/70 bg-background/30 p-3 transition-colors hover:bg-background/40"
                       >
                         <div className="flex items-center gap-3">
                           {nearbyThumbsQ.data?.[p.title] ? (
@@ -833,10 +833,10 @@ export default function DetailPage() {
                               src={nearbyThumbsQ.data[p.title]!}
                               alt=""
                               loading="lazy"
-                              className="h-12 w-12 shrink-0 rounded-xl border border-white/10 object-cover"
+                              className="h-12 w-12 shrink-0 rounded-xl border border-border/70 object-cover"
                             />
                           ) : (
-                            <div className="h-12 w-12 shrink-0 rounded-xl border border-white/10 bg-gradient-to-br from-muted/60 to-background/20" />
+                            <div className="h-12 w-12 shrink-0 rounded-xl border border-border/70 bg-gradient-to-br from-muted/60 to-background/20" />
                           )}
                           <div className="min-w-0">
                             <div className="truncate text-sm font-medium">{p.title}</div>
@@ -922,7 +922,7 @@ export default function DetailPage() {
                         src={poiThumbsQ.data[String(p.id)]!}
                         alt=""
                         loading="lazy"
-                        className="mt-0.5 size-12 shrink-0 rounded-xl border border-white/10 object-cover"
+                        className="mt-0.5 size-12 shrink-0 rounded-xl border border-border/70 object-cover"
                       />
                     ) : null}
                     <div className="min-w-0">

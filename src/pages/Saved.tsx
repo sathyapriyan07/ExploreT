@@ -69,7 +69,7 @@ export default function SavedPage() {
                 {savedQ.data.map((p) => (
                   <div
                     key={p.id}
-                    className="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-background/30 p-3 transition-colors hover:bg-background/40"
+                    className="flex items-center justify-between gap-3 rounded-2xl border border-border/70 bg-background/30 p-3 transition-colors hover:bg-background/40"
                   >
                     <div className="min-w-0">
                       <Link
@@ -116,7 +116,7 @@ export default function SavedPage() {
                 {tripsQ.data.map((t) => (
                   <div
                     key={t.id}
-                    className="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-background/30 p-3 transition-colors hover:bg-background/40"
+                    className="flex items-center justify-between gap-3 rounded-2xl border border-border/70 bg-background/30 p-3 transition-colors hover:bg-background/40"
                   >
                     <div className="min-w-0">
                       <div className="truncate text-sm font-medium">

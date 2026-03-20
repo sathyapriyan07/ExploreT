@@ -41,7 +41,7 @@ export default function AuthPage() {
     <div className="relative mx-auto max-w-md">
       <div className="pointer-events-none absolute -inset-10 -z-10 rounded-[2.5rem] bg-[radial-gradient(500px_220px_at_50%_0%,hsl(var(--primary)/0.25),transparent_65%)]" />
 
-      <Card className="border-white/10 bg-card/75 shadow-[var(--shadow-soft)] backdrop-blur-xl">
+      <Card className="border-border/70 bg-card/75 shadow-[var(--shadow-soft)] backdrop-blur-xl">
         <CardHeader>
           <CardTitle className="text-xl">
             {mode === 'signup' ? 'Create account' : 'Welcome back'}
@@ -131,4 +131,3 @@ export default function AuthPage() {
     </div>
   )
 }
-

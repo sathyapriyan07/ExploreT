@@ -82,15 +82,14 @@ export default function SearchPage() {
           ))}
         </div>
       ) : effective ? (
-        <div className="rounded-2xl border border-white/10 bg-card/70 p-8 text-center text-muted-foreground shadow-[var(--shadow-soft)] backdrop-blur-xl">
+        <div className="rounded-2xl border border-border/70 bg-card/70 p-8 text-center text-muted-foreground shadow-[var(--shadow-soft)] backdrop-blur-xl">
           No results. Try a broader query (e.g. “Tokyo”, “Kerala”, “Swiss Alps”).
         </div>
       ) : (
-        <div className="rounded-2xl border border-white/10 bg-card/70 p-8 text-center text-muted-foreground shadow-[var(--shadow-soft)] backdrop-blur-xl">
+        <div className="rounded-2xl border border-border/70 bg-card/70 p-8 text-center text-muted-foreground shadow-[var(--shadow-soft)] backdrop-blur-xl">
           Start typing to search Wikipedia.
         </div>
       )}
     </div>
   )
 }
-

@@ -182,7 +182,7 @@ export function MapView() {
 
   return (
     <div className="grid gap-6 lg:grid-cols-5">
-      <div className="space-y-4 rounded-3xl border border-white/10 bg-card/40 p-4 shadow-[var(--shadow-soft)] backdrop-blur-xl lg:col-span-2">
+      <div className="space-y-4 rounded-3xl border border-border/70 bg-card/40 p-4 shadow-[var(--shadow-soft)] backdrop-blur-xl lg:col-span-2">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-semibold tracking-tight">Map discovery</h1>
           <div className="text-xs text-muted-foreground">
@@ -401,10 +401,10 @@ export function MapView() {
                                 src={poiThumbsQ.data[String(p.id)]!}
                                 alt=""
                                 loading="lazy"
-                                className="mt-0.5 size-11 shrink-0 rounded-xl border border-white/10 object-cover"
+                                className="mt-0.5 size-11 shrink-0 rounded-xl border border-border/70 object-cover"
                               />
                             ) : (
-                              <div className="mt-0.5 size-11 shrink-0 rounded-xl border border-white/10 bg-background/30" />
+                              <div className="mt-0.5 size-11 shrink-0 rounded-xl border border-border/70 bg-background/30" />
                             )}
                             <div className="min-w-0">
                               <div className="truncate text-sm font-medium">
@@ -438,7 +438,7 @@ export function MapView() {
         </div>
       </div>
 
-      <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-card/20 shadow-[var(--shadow-soft)] lg:col-span-3">
+      <div className="relative overflow-hidden rounded-3xl border border-border/70 bg-card/20 shadow-[var(--shadow-soft)] lg:col-span-3">
         {showSearchArea ? (
           <div className="absolute left-1/2 top-3 z-[1000] -translate-x-1/2">
             <Button

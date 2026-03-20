@@ -46,7 +46,7 @@ function SortableItem({
     <div
       ref={setNodeRef}
       style={style}
-      className="flex items-start gap-2 rounded-2xl border border-white/10 bg-background/30 p-3 transition-colors hover:bg-background/40"
+      className="flex items-start gap-2 rounded-2xl border border-border/70 bg-background/30 p-3 transition-colors hover:bg-background/40"
     >
       <button
         className="mt-0.5 inline-flex cursor-grab items-center text-muted-foreground active:cursor-grabbing"
